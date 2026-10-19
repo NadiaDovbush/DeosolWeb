@@ -11,14 +11,15 @@ export default defineConfig({
       manifest: {
         name: 'Deosol',
         short_name: 'Deosol',
-        start_url: '/',
+        start_url: '/Deosol/',
+        scope: '/Deosol/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#6c3fc5',
         icons: [
-          { src: '/icon1-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/icon1-512.png', sizes: '512x512', type: 'image/png' },
-          { src: '/icon2-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+          { src: 'icon1-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icon1-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icon2-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
         ]
       },
       workbox: {
