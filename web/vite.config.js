@@ -17,10 +17,11 @@ export default defineConfig({
         background_color: '#ffffff',
         theme_color: '#6c3fc5',
         icons: [
-          { src: 'icon1-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icon1-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icon2-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
-        ]
+  { src: 'icon1-192.png', sizes: '192x192', type: 'image/png' },
+  { src: 'icon1-512.png', sizes: '512x512', type: 'image/png' },
+  { src: 'icon2-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
+  { src: 'icon2-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+]
       },
       workbox: {
         navigateFallbackDenylist: [/^\/api/, /^\/socket\.io/]
